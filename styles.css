@@ -34,7 +34,9 @@ a:visited{
   background-color: #afc7ed;
   height: 100px;
   border-bottom: 20px #555;
-  position: absolute;
+  position: fixed;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 .container{
   width: 90%;
@@ -94,6 +96,26 @@ main{
   max-width: 1024px;
   height: 100%;
   display: flex;
-  align-items: center;
   margin: auto;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+.home{
+  width: 100%;
+  height: 512px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  align-content: center;
+}
+.avoidhype{
+  vertical-align: middle;
+  position: relative;
+  top: 50px;
+}
+div > .header{
+  text-shadow: 3px 3px #ff0000;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-weight: bold;
 }
