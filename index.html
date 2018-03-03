@@ -47,16 +47,67 @@
           Schedule a Consultation Today
         </button>
       </div>
-      <div id="famous" class="slideshow">
-        <p class="quote-1"><q>Bitcoin is a remarkable cryptographic achievement… The ability to create something which is not duplicable in the digital world has enormous value.</q>
-        <footer>- Eric Schmidt, Executive Chairman of Google</footer>
-        </p>
-        <p class="quote-2"><q>Bitcoin is a technological tour de force.</q>
-        <footer>- Bill Gates</footer>
-        </p>
-        <p class="quote-3"><q>I do think Bitcoin is the first encrypted money that has the potential to do something like change the world.</q>
-        <footer>- Peter Thiel, Co-Founder of PayPal</footer>
-        </p>
+      <div id="famous" class="slideshow carousel-fade" data-ride="carousel">
+        <script>
+        $('.carousel').carousel({
+          interval: 3000
+        })
+        </script>
+        <ol class="carousel-indicators">
+          <li data-target="#famous" data-slide-to="0" class="active"></li>
+          <li data-target="#famous" data-slide-to="1"></li>
+          <li data-target="#famous" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <br>
+            <p class="quote-1"><q>Bitcoin is a remarkable cryptographic achievement... The ability to create something which is not duplicable in the digital world has enormous value.</q>
+            <footer>- Eric Schmidt, Executive Chairman of Google</footer>
+            </p>
+          </div>
+          <div class="item">
+            <br><br><br>
+            <p class="quote-2"><q>Bitcoin is a technological tour de force.</q>
+            <footer>- Bill Gates</footer>
+            </p>
+          </div>
+          <div class="item">
+            <br>
+            <p class="quote-3"><q>I do think Bitcoin is the first encrypted money that has the potential to do something like change the world.</q>
+            <footer>- Peter Thiel, Co-Founder of PayPal</footer>
+            </p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="about">
+        <h3 style="font-size:40px;letter-spacing:15px;color:grey;margin-bottom:5%"> what we do </h3>
+        <div id="mining" class="defaultInfo">
+          <h4>Mining</h4>
+          <p class=center>
+            With numerous options and coins to choose from, we offer guidance to help you choose the right tools. We offer expertise for the selection of hardware and altcoin mining that will fit your needs best. If you need facility support, we can connect you to professionals that will get you up and running as soon as possible.
+          </p>
+        </div>
+        <div id="blockchain" class="alternateInfo">
+          <h4>Blockchain</h4>
+          <p class=center>
+            We offer development services for the creation and deployment of ERC-20 tokens and applications on the Ethereum network. We also offer code reviews for existing projects and can provide guidance on blockchain solutions.
+          </p>
+        </div>
+        <div id="investing" class="defaultInfo">
+          <h4>Investing</h4>h3{
+  font-size: 40px;
+  margin-bottom: 20%;
+}
+          <p class=center>
+            We provide research and whitepaper review for cryptocurrency projects. If you're looking for advice to make an investment decision or just trying to enhance your own knowledge, our team will make sure you're fully informed.
+          </p>
+        </div>
+        <div id="customers" class="alternateInfo">
+          <h4>Satisfied Customers</h4>
+          <p>
+          </p>
+        </div>
       </div>
     </div>
   </main>
