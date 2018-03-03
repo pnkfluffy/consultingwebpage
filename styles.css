@@ -2,11 +2,14 @@
 
 /*general*/
 body{
-  background-color: #888;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   align-items: center;
+}
+html{
+  height: 100%;
+  background-color: #888;
 }
 header{
   width: 100%
@@ -38,12 +41,12 @@ a:visited{
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-.container{
-  width: 90%;
+.headerContainer{
+  width: 80%;
+  max-width: 1536px;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  max-width: 1024px;
   padding: 0 15px 0 15px;
   margin: auto;
 }
@@ -55,12 +58,11 @@ a:visited{
 .navbar-right{
   width: auto;
   height: auto;
-  display: block;
   max-height: 100px;
-  margin-right: 25px;
   list-style: none;
   font-size: 15px;
   color: #555;
+  margin: 0 25px 0 0 !important;
 }
 .blocker{
   display: inline-block;
@@ -93,29 +95,72 @@ main{
   border-left: 2px;
   border-right: 10px;
   border-color: #666;
-  max-width: 1024px;
+  width: 1536px;
+  max-width: 80%;
   height: 100%;
-  display: flex;
   margin: auto;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1);
 }
-.home{
+.mainBody div{
   width: 100%;
-  height: 512px;
+  height: 800px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+.home{
   color: white;
   align-content: center;
-}
-.avoidhype{
-  vertical-align: middle;
-  position: relative;
-  top: 50px;
+  background-image: url(https://www.colourbox.com/preview/26519664-line-cryptocurrency-white-seamless-pattern.jpg);
+  background-color: #cccccc;
 }
 div > .header{
-  text-shadow: 3px 3px #ff0000;
-  font-size: 60px;
+  text-shadow: 3px 3px grey;
+  font-size: 100px;
   letter-spacing: 10px;
   font-weight: bold;
+  padding: 0;
+  margin: auto;
+  opacity: .8;
+}
+.avoidHype{
+  vertical-align: middle;
+  position: relative;
+  top: 10%;
+}
+.scheduleButton{
+  background-color: white;
+  color: grey;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  height: 8%;
+  position: relative;
+  top: -30%;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 8);
+}
+.slideshow{
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  margin-top: -20px;
+  font-style: italic;
+}
+.slideshow q{
+  font-size: 20px;
+  color: #555;
+  line-height: 1.4;
+}
+.slideshow p{
+  text-align: left;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slideshow footer{
+  margin-top: .5em;
+  padding: 0;
+  color: #777;
+  font-size: 12pt;
 }

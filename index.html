@@ -2,22 +2,25 @@
 
 <head>
   <link href="styles.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <header id="banner" class="navbar" style="top: 0px;">
-    <div class="container">
+    <div class="headerContainer">
       <a class="scrollable" href="#top"> <!--link this to top-->
         <img class="logo-top" src="http://cryptocurrencyconsulting.com/Logos/transparent/CCC.png" alt="cryptocurrencyconsulting | professional consulting"> </img>
       </a>
       <nav id="navbar" role="navigation">
         <ul class="navbar-right">
           <li class="active">
-            <a class="scrollable" href="#"> Home </a>
+            <a class="scrollable" href="#top"> Home </a>
           </li>
           <div class="blocker"></div>
           <li class="">
-            <a class="scrollable" href="#"> About </a>
+            <a class="scrollable" href="#famous"> About </a>
           </li>
           <div class="blocker"></div>
           <li class="">
@@ -35,11 +38,25 @@
   <main>
     <div class="mainBody">
       <div class="home">
-        <div class="avoidhype">
+        <div class="avoidHype">
           <h1 class="header"> AVOID </h1>
           <h2 class="header"> the <h2>
           <h1 class="header"> HYPE <h1>
         </div>
+        <button class="scheduleButton">
+          Schedule a Consultation Today
+        </button>
+      </div>
+      <div id="famous" class="slideshow">
+        <p class="quote-1"><q>Bitcoin is a remarkable cryptographic achievement… The ability to create something which is not duplicable in the digital world has enormous value.</q>
+        <footer>- Eric Schmidt, Executive Chairman of Google</footer>
+        </p>
+        <p class="quote-2"><q>Bitcoin is a technological tour de force.</q>
+        <footer>- Bill Gates</footer>
+        </p>
+        <p class="quote-3"><q>I do think Bitcoin is the first encrypted money that has the potential to do something like change the world.</q>
+        <footer>- Peter Thiel, Co-Founder of PayPal</footer>
+        </p>
       </div>
     </div>
   </main>
